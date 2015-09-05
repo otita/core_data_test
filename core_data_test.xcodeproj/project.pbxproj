@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		82057F911B9B4D1800D77417 /* MyStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 82057F901B9B4D1800D77417 /* MyStudent.m */; };
-		82057F941B9B4D2800D77417 /* MyBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 82057F931B9B4D2800D77417 /* MyBook.m */; };
-		82057F971B9B4D3F00D77417 /* MuAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = 82057F961B9B4D3F00D77417 /* MuAuthor.m */; };
+		82057F9A1B9B596300D77417 /* Author.m in Sources */ = {isa = PBXBuildFile; fileRef = 82057F991B9B596300D77417 /* Author.m */; };
+		82057F9D1B9B596400D77417 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 82057F9C1B9B596400D77417 /* Book.m */; };
+		82057FA01B9B596400D77417 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 82057F9F1B9B596400D77417 /* Student.m */; };
+		82057FA81B9B617E00D77417 /* about_commons.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 82057FA71B9B617E00D77417 /* about_commons.rtf */; };
+		82057FAA1B9B621600D77417 /* about_view_models.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 82057FA91B9B621600D77417 /* about_view_models.rtf */; };
+		82057FAC1B9B628400D77417 /* about_controllers.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 82057FAB1B9B628400D77417 /* about_controllers.rtf */; };
+		82057FAE1B9B62E000D77417 /* about_models.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 82057FAD1B9B62E000D77417 /* about_models.rtf */; };
 		821CBD811B9B3ECF00E7FB95 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 821CBD801B9B3ECF00E7FB95 /* AppDelegate.m */; };
 		821CBD831B9B3ECF00E7FB95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 821CBD821B9B3ECF00E7FB95 /* main.m */; };
 		821CBD861B9B3ECF00E7FB95 /* core_data_test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 821CBD841B9B3ECF00E7FB95 /* core_data_test.xcdatamodeld */; };
@@ -29,12 +33,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		82057F8F1B9B4D1800D77417 /* MyStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyStudent.h; sourceTree = "<group>"; };
-		82057F901B9B4D1800D77417 /* MyStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyStudent.m; sourceTree = "<group>"; };
-		82057F921B9B4D2800D77417 /* MyBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBook.h; sourceTree = "<group>"; };
-		82057F931B9B4D2800D77417 /* MyBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBook.m; sourceTree = "<group>"; };
-		82057F951B9B4D3F00D77417 /* MuAuthor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MuAuthor.h; sourceTree = "<group>"; };
-		82057F961B9B4D3F00D77417 /* MuAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MuAuthor.m; sourceTree = "<group>"; };
+		82057F981B9B596300D77417 /* Author.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Author.h; sourceTree = "<group>"; };
+		82057F991B9B596300D77417 /* Author.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Author.m; sourceTree = "<group>"; };
+		82057F9B1B9B596400D77417 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		82057F9C1B9B596400D77417 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		82057F9E1B9B596400D77417 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		82057F9F1B9B596400D77417 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		82057FA71B9B617E00D77417 /* about_commons.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = about_commons.rtf; sourceTree = "<group>"; };
+		82057FA91B9B621600D77417 /* about_view_models.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = about_view_models.rtf; sourceTree = "<group>"; };
+		82057FAB1B9B628400D77417 /* about_controllers.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = about_controllers.rtf; sourceTree = "<group>"; };
+		82057FAD1B9B62E000D77417 /* about_models.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = about_models.rtf; sourceTree = "<group>"; };
 		821CBD7A1B9B3ECF00E7FB95 /* core_data_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = core_data_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		821CBD7E1B9B3ECF00E7FB95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		821CBD7F1B9B3ECF00E7FB95 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -66,17 +74,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		82057F8E1B9B4C4100D77417 /* Model Class */ = {
+		82057F8E1B9B4C4100D77417 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				82057F8F1B9B4D1800D77417 /* MyStudent.h */,
-				82057F901B9B4D1800D77417 /* MyStudent.m */,
-				82057F951B9B4D3F00D77417 /* MuAuthor.h */,
-				82057F961B9B4D3F00D77417 /* MuAuthor.m */,
-				82057F921B9B4D2800D77417 /* MyBook.h */,
-				82057F931B9B4D2800D77417 /* MyBook.m */,
+				82057F9E1B9B596400D77417 /* Student.h */,
+				82057F9F1B9B596400D77417 /* Student.m */,
+				82057F9B1B9B596400D77417 /* Book.h */,
+				82057F9C1B9B596400D77417 /* Book.m */,
+				82057F981B9B596300D77417 /* Author.h */,
+				82057F991B9B596300D77417 /* Author.m */,
+				82057FAD1B9B62E000D77417 /* about_models.rtf */,
 			);
-			name = "Model Class";
+			name = Models;
+			sourceTree = "<group>";
+		};
+		82057FA41B9B5EA700D77417 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				82057FAB1B9B628400D77417 /* about_controllers.rtf */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		82057FA51B9B602500D77417 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				82057FA71B9B617E00D77417 /* about_commons.rtf */,
+			);
+			name = Commons;
+			sourceTree = "<group>";
+		};
+		82057FA61B9B604800D77417 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				82057FA91B9B621600D77417 /* about_view_models.rtf */,
+			);
+			name = ViewModels;
 			sourceTree = "<group>";
 		};
 		821CBD711B9B3ECF00E7FB95 = {
@@ -102,7 +135,10 @@
 			children = (
 				821CBD7F1B9B3ECF00E7FB95 /* AppDelegate.h */,
 				821CBD801B9B3ECF00E7FB95 /* AppDelegate.m */,
-				82057F8E1B9B4C4100D77417 /* Model Class */,
+				82057FA51B9B602500D77417 /* Commons */,
+				82057FA61B9B604800D77417 /* ViewModels */,
+				82057FA41B9B5EA700D77417 /* Controllers */,
+				82057F8E1B9B4C4100D77417 /* Models */,
 				821CBD871B9B3ECF00E7FB95 /* Images.xcassets */,
 				821CBD891B9B3ECF00E7FB95 /* MainMenu.xib */,
 				821CBD841B9B3ECF00E7FB95 /* core_data_test.xcdatamodeld */,
@@ -217,8 +253,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82057FAE1B9B62E000D77417 /* about_models.rtf in Resources */,
+				82057FA81B9B617E00D77417 /* about_commons.rtf in Resources */,
+				82057FAC1B9B628400D77417 /* about_controllers.rtf in Resources */,
 				821CBD881B9B3ECF00E7FB95 /* Images.xcassets in Resources */,
 				821CBD8B1B9B3ECF00E7FB95 /* MainMenu.xib in Resources */,
+				82057FAA1B9B621600D77417 /* about_view_models.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,12 +276,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82057F9D1B9B596400D77417 /* Book.m in Sources */,
 				821CBD831B9B3ECF00E7FB95 /* main.m in Sources */,
 				821CBD811B9B3ECF00E7FB95 /* AppDelegate.m in Sources */,
-				82057F971B9B4D3F00D77417 /* MuAuthor.m in Sources */,
+				82057F9A1B9B596300D77417 /* Author.m in Sources */,
 				821CBD861B9B3ECF00E7FB95 /* core_data_test.xcdatamodeld in Sources */,
-				82057F941B9B4D2800D77417 /* MyBook.m in Sources */,
-				82057F911B9B4D1800D77417 /* MyStudent.m in Sources */,
+				82057FA01B9B596400D77417 /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
