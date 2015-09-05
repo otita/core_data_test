@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82057F911B9B4D1800D77417 /* MyStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 82057F901B9B4D1800D77417 /* MyStudent.m */; };
+		82057F941B9B4D2800D77417 /* MyBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 82057F931B9B4D2800D77417 /* MyBook.m */; };
+		82057F971B9B4D3F00D77417 /* MuAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = 82057F961B9B4D3F00D77417 /* MuAuthor.m */; };
 		821CBD811B9B3ECF00E7FB95 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 821CBD801B9B3ECF00E7FB95 /* AppDelegate.m */; };
 		821CBD831B9B3ECF00E7FB95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 821CBD821B9B3ECF00E7FB95 /* main.m */; };
 		821CBD861B9B3ECF00E7FB95 /* core_data_test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 821CBD841B9B3ECF00E7FB95 /* core_data_test.xcdatamodeld */; };
@@ -26,6 +29,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		82057F8F1B9B4D1800D77417 /* MyStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyStudent.h; sourceTree = "<group>"; };
+		82057F901B9B4D1800D77417 /* MyStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyStudent.m; sourceTree = "<group>"; };
+		82057F921B9B4D2800D77417 /* MyBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBook.h; sourceTree = "<group>"; };
+		82057F931B9B4D2800D77417 /* MyBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBook.m; sourceTree = "<group>"; };
+		82057F951B9B4D3F00D77417 /* MuAuthor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MuAuthor.h; sourceTree = "<group>"; };
+		82057F961B9B4D3F00D77417 /* MuAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MuAuthor.m; sourceTree = "<group>"; };
 		821CBD7A1B9B3ECF00E7FB95 /* core_data_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = core_data_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		821CBD7E1B9B3ECF00E7FB95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		821CBD7F1B9B3ECF00E7FB95 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -57,6 +66,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		82057F8E1B9B4C4100D77417 /* Model Class */ = {
+			isa = PBXGroup;
+			children = (
+				82057F8F1B9B4D1800D77417 /* MyStudent.h */,
+				82057F901B9B4D1800D77417 /* MyStudent.m */,
+				82057F951B9B4D3F00D77417 /* MuAuthor.h */,
+				82057F961B9B4D3F00D77417 /* MuAuthor.m */,
+				82057F921B9B4D2800D77417 /* MyBook.h */,
+				82057F931B9B4D2800D77417 /* MyBook.m */,
+			);
+			name = "Model Class";
+			sourceTree = "<group>";
+		};
 		821CBD711B9B3ECF00E7FB95 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +102,7 @@
 			children = (
 				821CBD7F1B9B3ECF00E7FB95 /* AppDelegate.h */,
 				821CBD801B9B3ECF00E7FB95 /* AppDelegate.m */,
+				82057F8E1B9B4C4100D77417 /* Model Class */,
 				821CBD871B9B3ECF00E7FB95 /* Images.xcassets */,
 				821CBD891B9B3ECF00E7FB95 /* MainMenu.xib */,
 				821CBD841B9B3ECF00E7FB95 /* core_data_test.xcdatamodeld */,
@@ -215,7 +238,10 @@
 			files = (
 				821CBD831B9B3ECF00E7FB95 /* main.m in Sources */,
 				821CBD811B9B3ECF00E7FB95 /* AppDelegate.m in Sources */,
+				82057F971B9B4D3F00D77417 /* MuAuthor.m in Sources */,
 				821CBD861B9B3ECF00E7FB95 /* core_data_test.xcdatamodeld in Sources */,
+				82057F941B9B4D2800D77417 /* MyBook.m in Sources */,
+				82057F911B9B4D1800D77417 /* MyStudent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +431,7 @@
 				821CBD9C1B9B3ECF00E7FB95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		821CBD9D1B9B3ECF00E7FB95 /* Build configuration list for PBXNativeTarget "core_data_testTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +440,7 @@
 				821CBD9F1B9B3ECF00E7FB95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
