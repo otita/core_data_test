@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  ModelManager.h
 //  core_data_test
 //
 //  Created by Taito Lee on 2015/09/06.
@@ -8,11 +8,10 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface ModelManager : NSObject
 
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
 @end
-

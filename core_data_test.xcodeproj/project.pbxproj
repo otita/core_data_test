@@ -18,6 +18,8 @@
 		82057FB31B9B63C400D77417 /* LibraryWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82057FB11B9B63C400D77417 /* LibraryWindow.xib */; };
 		82057FB61B9B640600D77417 /* about_views.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 82057FB51B9B640600D77417 /* about_views.rtf */; };
 		82057FB91B9B669E00D77417 /* BaseWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82057FB81B9B669E00D77417 /* BaseWindowController.m */; };
+		82057FBD1B9BDCF000D77417 /* LibraryWindowDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 82057FBC1B9BDCF000D77417 /* LibraryWindowDataSource.m */; };
+		82057FC01B9BF73600D77417 /* ModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 82057FBF1B9BF73600D77417 /* ModelManager.m */; };
 		821CBD811B9B3ECF00E7FB95 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 821CBD801B9B3ECF00E7FB95 /* AppDelegate.m */; };
 		821CBD831B9B3ECF00E7FB95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 821CBD821B9B3ECF00E7FB95 /* main.m */; };
 		821CBD861B9B3ECF00E7FB95 /* core_data_test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 821CBD841B9B3ECF00E7FB95 /* core_data_test.xcdatamodeld */; };
@@ -53,6 +55,10 @@
 		82057FB51B9B640600D77417 /* about_views.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = about_views.rtf; sourceTree = "<group>"; };
 		82057FB71B9B669E00D77417 /* BaseWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseWindowController.h; sourceTree = "<group>"; };
 		82057FB81B9B669E00D77417 /* BaseWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseWindowController.m; sourceTree = "<group>"; };
+		82057FBB1B9BDCF000D77417 /* LibraryWindowDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryWindowDataSource.h; sourceTree = "<group>"; };
+		82057FBC1B9BDCF000D77417 /* LibraryWindowDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryWindowDataSource.m; sourceTree = "<group>"; };
+		82057FBE1B9BF73600D77417 /* ModelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelManager.h; sourceTree = "<group>"; };
+		82057FBF1B9BF73600D77417 /* ModelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelManager.m; sourceTree = "<group>"; };
 		821CBD7A1B9B3ECF00E7FB95 /* core_data_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = core_data_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		821CBD7E1B9B3ECF00E7FB95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		821CBD7F1B9B3ECF00E7FB95 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -87,14 +93,16 @@
 		82057F8E1B9B4C4100D77417 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				82057FAD1B9B62E000D77417 /* about_models.rtf */,
 				821CBD841B9B3ECF00E7FB95 /* core_data_test.xcdatamodeld */,
+				82057FBE1B9BF73600D77417 /* ModelManager.h */,
+				82057FBF1B9BF73600D77417 /* ModelManager.m */,
 				82057F9E1B9B596400D77417 /* Student.h */,
 				82057F9F1B9B596400D77417 /* Student.m */,
 				82057F9B1B9B596400D77417 /* Book.h */,
 				82057F9C1B9B596400D77417 /* Book.m */,
 				82057F981B9B596300D77417 /* Author.h */,
 				82057F991B9B596300D77417 /* Author.m */,
-				82057FAD1B9B62E000D77417 /* about_models.rtf */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -125,6 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				82057FA91B9B621600D77417 /* about_view_models.rtf */,
+				82057FBB1B9BDCF000D77417 /* LibraryWindowDataSource.h */,
+				82057FBC1B9BDCF000D77417 /* LibraryWindowDataSource.m */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -311,7 +321,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				82057FB91B9B669E00D77417 /* BaseWindowController.m in Sources */,
+				82057FBD1B9BDCF000D77417 /* LibraryWindowDataSource.m in Sources */,
 				82057F9D1B9B596400D77417 /* Book.m in Sources */,
+				82057FC01B9BF73600D77417 /* ModelManager.m in Sources */,
 				821CBD831B9B3ECF00E7FB95 /* main.m in Sources */,
 				821CBD811B9B3ECF00E7FB95 /* AppDelegate.m in Sources */,
 				82057F9A1B9B596300D77417 /* Author.m in Sources */,
@@ -434,6 +446,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = core_data_test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -445,6 +458,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = core_data_test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";

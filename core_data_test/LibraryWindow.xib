@@ -7,6 +7,7 @@
         <customObject id="-2" userLabel="File's Owner" customClass="LibraryWindowController">
             <connections>
                 <outlet property="author_popup" destination="0DH-k8-csW" id="VRQ-31-FXG"/>
+                <outlet property="library_tableview" destination="R5k-b0-2WE" id="yok-Yx-Ewr"/>
                 <outlet property="price_popup" destination="sWk-91-cTR" id="X6T-yS-UsL"/>
                 <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
             </connections>
