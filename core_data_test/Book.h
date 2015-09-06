@@ -13,10 +13,10 @@
 
 @interface Book : NSManagedObject
 
-@property (nonatomic, retain) NSString * title;
-@property (nonatomic, retain) NSNumber * price;
-@property (nonatomic, retain) NSDate * publication_date;
-@property (nonatomic, retain) NSString * outline;
+@property (nonatomic, retain) NSString *title;
+@property (nonatomic, retain) NSNumber *price;
+@property (nonatomic, retain) NSDate *publication_date;
+@property (nonatomic, retain) NSString *outline;
 @property (nonatomic, retain) Author *author;
 @property (nonatomic, retain) NSSet *students;
 @end
