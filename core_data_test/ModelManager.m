@@ -8,13 +8,35 @@
 
 #import "ModelManager.h"
 
-@interface ModelManager () {
-  
-}
+@interface ModelManager ()
+
+- (id)initSharedInstance;
 
 @end
 
 @implementation ModelManager
+
++ (ModelManager *)sharedModelManager {
+  static ModelManager *sharedModelManager;
+  static dispatch_once_t onceToken;
+  dispatch_once(&onceToken, ^{
+    sharedModelManager = [[ModelManager alloc] initSharedInstance];
+  });
+  return sharedModelManager;
+}
+
+- (id)initSharedInstance {
+  self = [super init];
+  if (self) {
+    // 初期化処理
+  }
+  return self;
+}
+
+- (id)init {
+  [self doesNotRecognizeSelector:_cmd];
+  return nil;
+}
 
 #pragma mark - Core Data stack
 

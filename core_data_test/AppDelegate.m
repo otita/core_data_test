@@ -7,15 +7,15 @@
 //
 
 #import "AppDelegate.h"
+#import "StartWindowController.h"
 #import "LibraryWindowController.h"
 
 @interface AppDelegate () {
-  LibraryWindowController *_libraryWindowController;
+  
 }
 
 @property (weak) IBOutlet NSWindow *window;
 - (IBAction)saveAction:(id)sender;
-- (IBAction)showLibraryWindow:(id)sender;
 
 @end
 
@@ -23,7 +23,6 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
   // Insert code here to initialize your application
-  _libraryWindowController = nil;
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
@@ -128,13 +127,6 @@
   if ([[self managedObjectContext] hasChanges] && ![[self managedObjectContext] save:&error]) {
     [[NSApplication sharedApplication] presentError:error];
   }
-}
-
-- (IBAction)showLibraryWindow:(id)sender {
-  if (!_libraryWindowController) {
-        _libraryWindowController = [[LibraryWindowController alloc] init];
-  }
-  [_libraryWindowController showWindow:nil];
 }
 
 - (NSUndoManager *)windowWillReturnUndoManager:(NSWindow *)window {

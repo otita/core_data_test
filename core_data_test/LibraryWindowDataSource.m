@@ -15,11 +15,11 @@
 @implementation LibraryWindowDataSource
 
 - (NSMenu *)menuForAuthorPopUp {
-  
+  return [NSMenu new];
 }
 
-- (NSMenu *)menuForAuthorPopUp {
-  
+- (NSMenu *)menuForPricePopUp {
+  return [NSMenu new];
 }
 
 @end
