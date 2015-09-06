@@ -691,6 +691,9 @@ Let's read more books with me!!</string>
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="showLibraryWindow:" target="Voe-Tx-rLC" id="iyJ-1I-9d2"/>
+                        </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OJM-Xo-uBd">
                         <rect key="frame" x="295" y="13" width="96" height="32"/>
