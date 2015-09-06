@@ -7,17 +7,38 @@
 //
 
 #import "StartWindowController.h"
+#import "LibraryWindowController.h"
 
-@interface StartWindowController ()
+@interface StartWindowController () {
+  LibraryWindowController *_library_window_controller;
+}
+- (IBAction)showLibraryWindow:(id)sender;
+- (IBAction)showStudentsWindow:(id)sender;
 
 @end
 
 @implementation StartWindowController
 
 - (void)windowDidLoad {
-    [super windowDidLoad];
-    
-    // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
+  [super windowDidLoad];
+  _library_window_controller = nil;
 }
 
+- (NSString *)nibName {
+  return @"StartWindow";
+}
+
+- (void)render {
+  
+}
+
+- (IBAction)showLibraryWindow:(id)sender {
+  if (!_library_window_controller) {
+    _library_window_controller = [LibraryWindowController new];
+  }
+  [_library_window_controller showWindow:nil];
+}
+
+- (IBAction)showStudentsWindow:(id)sender {
+}
 @end

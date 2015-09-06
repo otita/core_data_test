@@ -12,3 +12,11 @@
 @interface LibraryWindowController : BaseWindowController
 
 @end
+
+@interface TestObject : NSObject
+
+@property NSString *title;
+@property NSString *author;
+@property NSNumber *price;
+
+@end

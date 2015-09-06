@@ -7,6 +7,7 @@
         <customObject id="-2" userLabel="File's Owner" customClass="LibraryWindowController">
             <connections>
                 <outlet property="author_popup" destination="0DH-k8-csW" id="VRQ-31-FXG"/>
+                <outlet property="books_array_controller" destination="2cf-0K-N5c" id="TKe-5s-prH"/>
                 <outlet property="library_tableview" destination="R5k-b0-2WE" id="yok-Yx-Ewr"/>
                 <outlet property="price_popup" destination="sWk-91-cTR" id="X6T-yS-UsL"/>
                 <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
@@ -30,7 +31,7 @@
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="ryY-AH-z0w" viewBased="YES" id="R5k-b0-2WE">
-                                    <rect key="frame" x="0.0" y="0.0" width="238" height="117"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="438" height="0.0"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <size key="intercellSpacing" width="3" height="2"/>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -50,7 +51,7 @@
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                             <prototypeCellViews>
                                                 <tableCellView id="Pp9-Rd-nd9">
-                                                    <rect key="frame" x="1" y="1" width="135.5" height="17"/>
+                                                    <rect key="frame" x="1" y="1" width="135" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
                                                         <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lP0-Rh-gUs">
@@ -60,6 +61,9 @@
                                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
+                                                            <connections>
+                                                                <binding destination="Pp9-Rd-nd9" name="value" keyPath="objectValue.title" id="Tb3-S5-37q"/>
+                                                            </connections>
                                                         </textField>
                                                     </subviews>
                                                     <connections>
@@ -82,7 +86,7 @@
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                             <prototypeCellViews>
                                                 <tableCellView id="9S4-vK-o28">
-                                                    <rect key="frame" x="139.5" y="1" width="138.5" height="17"/>
+                                                    <rect key="frame" x="139.5" y="1" width="138" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
                                                         <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GXO-KE-bOF">
@@ -92,6 +96,9 @@
                                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
+                                                            <connections>
+                                                                <binding destination="9S4-vK-o28" name="value" keyPath="objectValue.author" id="0VM-FL-iuk"/>
+                                                            </connections>
                                                         </textField>
                                                     </subviews>
                                                     <connections>
@@ -124,6 +131,9 @@
                                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
+                                                            <connections>
+                                                                <binding destination="Cam-5a-gxj" name="value" keyPath="objectValue.price" id="NXf-a6-mJg"/>
+                                                            </connections>
                                                         </textField>
                                                     </subviews>
                                                     <connections>
@@ -133,6 +143,9 @@
                                             </prototypeCellViews>
                                         </tableColumn>
                                     </tableColumns>
+                                    <connections>
+                                        <binding destination="2cf-0K-N5c" name="content" keyPath="arrangedObjects" id="yZU-yC-CAx"/>
+                                    </connections>
                                 </tableView>
                             </subviews>
                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -212,7 +225,14 @@
             <connections>
                 <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
             </connections>
-            <point key="canvasLocation" x="64" y="425"/>
+            <point key="canvasLocation" x="171" y="109"/>
         </window>
+        <arrayController objectClassName="TestObject" editable="NO" id="2cf-0K-N5c">
+            <declaredKeys>
+                <string>title</string>
+                <string>author</string>
+                <string>price</string>
+            </declaredKeys>
+        </arrayController>
     </objects>
 </document>
