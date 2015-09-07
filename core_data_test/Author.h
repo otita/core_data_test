@@ -19,6 +19,7 @@
 @property (nonatomic, retain) NSString * profile;
 @property (nonatomic, retain) NSString * birth_place;
 @property (nonatomic, retain) NSSet *books;
+
 @end
 
 @interface Author (CoreDataGeneratedAccessors)
